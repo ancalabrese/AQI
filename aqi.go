@@ -204,7 +204,7 @@ func main() {
 
 	for val := range r {
 		if val.Err != nil {
-			fmt.Printf("Error: reading failed %s\n", err.Error())
+			fmt.Printf("Error: reading failed %s\n", val.Err.Error())
 			continue
 		}
 
